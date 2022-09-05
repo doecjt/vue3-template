@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import AutoImport from 'unplugin-auto-import/vite'
+import Unocss from 'unocss/vite'
 
 export default defineConfig({
   plugins: [
@@ -8,6 +9,7 @@ export default defineConfig({
     AutoImport({
       imports: 'vue',
       dts: './src/auto-imports.d.ts'
-    })
+    }),
+    Unocss()
   ]
 })

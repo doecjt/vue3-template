@@ -5,4 +5,6 @@ const count = ref(0)
 <template>
   <h3>Hello vue3-template</h3>
   <p>{{ count }}</p>
+  <div class="bg-sky">click</div>
+  <div bg-orange>xixi</div>
 </template>
