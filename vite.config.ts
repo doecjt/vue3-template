@@ -11,5 +11,13 @@ export default defineConfig({
       dts: './src/auto-imports.d.ts'
     }),
     Unocss()
-  ]
+  ],
+  build: {
+    minify: 'terser',
+    terserOptions: {
+      compress: {
+        drop_console: true
+      }
+    }
+  }
 })

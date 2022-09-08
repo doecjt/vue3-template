@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const count = ref(0)
+console.log('xixihaha')
 </script>
 
 <template>
@@ -10,10 +11,11 @@ const count = ref(0)
   <div
     i-twemoji-grinning-face-with-smiling-eyes
     text-80px
-    hover:i-twemoji-face-with-tears-of-joy
+    hover="i-twemoji-face-with-tears-of-joy bg-sky"
     cursor-pointer
   />
   <p
     text="30px #1578ff"
+    hover="bg-sky"
   >attributify</p>
 </template>
