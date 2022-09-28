@@ -2,6 +2,7 @@
   "name": "vue3-template",
   "version": "1.0.0",
   "description": "",
+  "private": true,
   "main": "index.js",
   "scripts": {
     "dev": "vite --port 3333",
@@ -15,10 +16,15 @@
   "license": "ISC",
   "devDependencies": {
     "@iconify/json": "^2.1.103",
+    "@types/node": "^18.7.23",
+    "@typescript-eslint/eslint-plugin": "^5.38.1",
+    "@typescript-eslint/parser": "^5.38.1",
     "@unocss/preset-attributify": "^0.45.15",
     "@unocss/preset-icons": "^0.45.15",
     "@unocss/preset-wind": "^0.45.15",
     "@vitejs/plugin-vue": "^3.0.3",
+    "eslint": "^8.24.0",
+    "eslint-plugin-vue": "^9.5.1",
     "terser": "^5.15.0",
     "typescript": "^4.8.2",
     "unocss": "^0.45.15",
