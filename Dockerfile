@@ -1,4 +1,4 @@
-FROM node:16-alpine
+FROM node:16-alpine as build-stage
 
 WORKDIR /app
 RUN corepack enable
@@ -10,9 +10,9 @@ RUN --mount=type=cache,id=pnpm-store,target=/root/.pnpm-store \
 COPY . .
 RUN pnpm build
 
-FROM nginx:stable-alpine
+FROM nginx:stable-alpine as production-stage
 
-COPY --from=0 /app/dist /app
+COPY --from=build-stage /app/dist /app
 COPY nginx.conf /etc/nginx/nginx.conf
 
 EXPOSE 8080
