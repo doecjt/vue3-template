@@ -9,6 +9,8 @@ specifiers:
   '@unocss/preset-icons': ^0.45.15
   '@unocss/preset-wind': ^0.45.15
   '@vitejs/plugin-vue': ^3.0.3
+  '@vueuse/core': ^9.3.0
+  '@vueuse/head': ^0.7.12
   eslint: ^8.24.0
   eslint-plugin-vue: ^9.5.1
   terser: ^5.15.0
@@ -20,6 +22,8 @@ specifiers:
   vue-tsc: ^0.40.5
 
 dependencies:
+  '@vueuse/core': registry.npmmirror.com/@vueuse/core/9.3.0_vue@3.2.38
+  '@vueuse/head': registry.npmmirror.com/@vueuse/head/0.7.12_vue@3.2.38
   vue: registry.npmmirror.com/vue/3.2.38
 
 devDependencies:
@@ -36,7 +40,7 @@ devDependencies:
   terser: registry.npmmirror.com/terser/5.15.0
   typescript: registry.npmmirror.com/typescript/4.8.2
   unocss: registry.npmmirror.com/unocss/0.45.15_vite@3.0.9
-  unplugin-auto-import: registry.npmmirror.com/unplugin-auto-import/0.11.2_vite@3.0.9
+  unplugin-auto-import: registry.npmmirror.com/unplugin-auto-import/0.11.2_f45cre3kfyxkmqvcitmsrswqvu
   vite: registry.npmmirror.com/vite/3.0.9_terser@5.15.0
   vue-tsc: registry.npmmirror.com/vue-tsc/0.40.5_typescript@4.8.2
 
@@ -303,6 +307,11 @@ packages:
     name: '@types/node'
     version: 18.7.23
     dev: true
+
+  registry.npmmirror.com/@types/web-bluetooth/0.0.15:
+    resolution: {integrity: sha512-w7hEHXnPMEZ+4nGKl/KDRVpxkwYxYExuHOYXyzIzCDzEZ9ZCGMAewulr9IqJu2LR4N37fcnb1XVeuZ09qgOxhA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/web-bluetooth/-/web-bluetooth-0.0.15.tgz}
+    name: '@types/web-bluetooth'
+    version: 0.0.15
 
   registry.npmmirror.com/@typescript-eslint/eslint-plugin/5.38.1_rebftiohp6ssmmllfn74azvcwm:
     resolution: {integrity: sha512-ky7EFzPhqz3XlhS7vPOoMDaQnQMn+9o5ICR9CPr/6bw8HrFkzhMSxuA3gRfiJVvs7geYrSeawGJjZoZQKCOglQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@typescript-eslint/eslint-plugin/-/eslint-plugin-5.38.1.tgz}
@@ -813,6 +822,71 @@ packages:
     resolution: {integrity: sha512-dTyhTIRmGXBjxJE+skC8tTWCGLCVc4wQgRRLt8+O9p5ewBAjoBwtCAkLPrtToSr1xltoe3st21Pv953aOZ7alg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vue/shared/-/shared-3.2.38.tgz}
     name: '@vue/shared'
     version: 3.2.38
+
+  registry.npmmirror.com/@vueuse/core/9.3.0_vue@3.2.38:
+    resolution: {integrity: sha512-64Rna8IQDWpdrJxgitDg7yv1yTp41ZmvV8zlLEylK4QQLWAhz1OFGZDPZ8bU4lwcGgbEJ2sGi2jrdNh4LttUSQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vueuse/core/-/core-9.3.0.tgz}
+    id: registry.npmmirror.com/@vueuse/core/9.3.0
+    name: '@vueuse/core'
+    version: 9.3.0
+    dependencies:
+      '@types/web-bluetooth': registry.npmmirror.com/@types/web-bluetooth/0.0.15
+      '@vueuse/metadata': registry.npmmirror.com/@vueuse/metadata/9.3.0
+      '@vueuse/shared': registry.npmmirror.com/@vueuse/shared/9.3.0_vue@3.2.38
+      vue-demi: registry.npmmirror.com/vue-demi/0.13.11_vue@3.2.38
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - vue
+
+  registry.npmmirror.com/@vueuse/head/0.7.12_vue@3.2.38:
+    resolution: {integrity: sha512-sRcrE6VohiHInQR0sB0U8H8x2hAKdo+AIhd5PWBLx1jUp2vwyeQyA/4rlCzP5CMDB8z61MLvsOCApFJrRMRtTQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vueuse/head/-/head-0.7.12.tgz}
+    id: registry.npmmirror.com/@vueuse/head/0.7.12
+    name: '@vueuse/head'
+    version: 0.7.12
+    peerDependencies:
+      vue: '>=2.7 || >=3'
+    dependencies:
+      '@zhead/schema-vue': registry.npmmirror.com/@zhead/schema-vue/0.7.4_vue@3.2.38
+      vue: registry.npmmirror.com/vue/3.2.38
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+    dev: false
+
+  registry.npmmirror.com/@vueuse/metadata/9.3.0:
+    resolution: {integrity: sha512-GnnfjbzIPJIh9ngL9s9oGU1+Hx/h5/KFqTfJykzh/1xjaHkedV9g0MASpdmPZIP+ynNhKAcEfA6g5i8KXwtoMA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vueuse/metadata/-/metadata-9.3.0.tgz}
+    name: '@vueuse/metadata'
+    version: 9.3.0
+
+  registry.npmmirror.com/@vueuse/shared/9.3.0_vue@3.2.38:
+    resolution: {integrity: sha512-caGUWLY0DpPC6l31KxeUy6vPVNA0yKxx81jFYLoMpyP6cF84FG5Dkf69DfSUqL57wX8JcUkJDMnQaQIZPWFEQQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vueuse/shared/-/shared-9.3.0.tgz}
+    id: registry.npmmirror.com/@vueuse/shared/9.3.0
+    name: '@vueuse/shared'
+    version: 9.3.0
+    dependencies:
+      vue-demi: registry.npmmirror.com/vue-demi/0.13.11_vue@3.2.38
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - vue
+
+  registry.npmmirror.com/@zhead/schema-vue/0.7.4_vue@3.2.38:
+    resolution: {integrity: sha512-Q7wPUly3ZWbPYQ5SEJBUuD6Mw3wiUfPMPquGfqsR2KF6sxQKRF8oaHnRLuu2uxpjuXjkzpBlZBPu1JgQX+Lf6Q==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@zhead/schema-vue/-/schema-vue-0.7.4.tgz}
+    id: registry.npmmirror.com/@zhead/schema-vue/0.7.4
+    name: '@zhead/schema-vue'
+    version: 0.7.4
+    peerDependencies:
+      vue: '>=2.7 || >=3'
+    dependencies:
+      '@vueuse/shared': registry.npmmirror.com/@vueuse/shared/9.3.0_vue@3.2.38
+      '@zhead/schema': registry.npmmirror.com/@zhead/schema/0.7.4
+      vue: registry.npmmirror.com/vue/3.2.38
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+    dev: false
+
+  registry.npmmirror.com/@zhead/schema/0.7.4:
+    resolution: {integrity: sha512-18gfgmZL8gM64JdcT11d1rYLnCaY2mOtbDDSAXtCySanPGpkA1r+w01LCssEI/OfLdoZPS/kYCIW09d1PmUFfQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@zhead/schema/-/schema-0.7.4.tgz}
+    name: '@zhead/schema'
+    version: 0.7.4
+    dev: false
 
   registry.npmmirror.com/acorn-jsx/5.3.2_acorn@8.8.0:
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/acorn-jsx/-/acorn-jsx-5.3.2.tgz}
@@ -2605,7 +2679,7 @@ packages:
       - vite
     dev: true
 
-  registry.npmmirror.com/unplugin-auto-import/0.11.2_vite@3.0.9:
+  registry.npmmirror.com/unplugin-auto-import/0.11.2_f45cre3kfyxkmqvcitmsrswqvu:
     resolution: {integrity: sha512-1+VwBfn9dtiYv9SQLKP1AvZolUbK9xTVeAT+iOcEk4EHSFUlmIqBVLEKI76cifSQTLOJ3rZyPrEgptf3SZNLlQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/unplugin-auto-import/-/unplugin-auto-import-0.11.2.tgz}
     id: registry.npmmirror.com/unplugin-auto-import/0.11.2
     name: unplugin-auto-import
@@ -2619,6 +2693,7 @@ packages:
     dependencies:
       '@antfu/utils': registry.npmmirror.com/@antfu/utils/0.5.2
       '@rollup/pluginutils': registry.npmmirror.com/@rollup/pluginutils/4.2.1
+      '@vueuse/core': registry.npmmirror.com/@vueuse/core/9.3.0_vue@3.2.38
       local-pkg: registry.npmmirror.com/local-pkg/0.4.2
       magic-string: registry.npmmirror.com/magic-string/0.26.3
       unimport: registry.npmmirror.com/unimport/0.6.7_vite@3.0.9
@@ -2701,6 +2776,23 @@ packages:
     optionalDependencies:
       fsevents: registry.npmmirror.com/fsevents/2.3.2
     dev: true
+
+  registry.npmmirror.com/vue-demi/0.13.11_vue@3.2.38:
+    resolution: {integrity: sha512-IR8HoEEGM65YY3ZJYAjMlKygDQn25D5ajNFNoKh9RSDMQtlzCxtfQjdQgv9jjK+m3377SsJXY8ysq8kLCZL25A==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/vue-demi/-/vue-demi-0.13.11.tgz}
+    id: registry.npmmirror.com/vue-demi/0.13.11
+    name: vue-demi
+    version: 0.13.11
+    engines: {node: '>=12'}
+    hasBin: true
+    requiresBuild: true
+    peerDependencies:
+      '@vue/composition-api': ^1.0.0-rc.1
+      vue: ^3.0.0-0 || ^2.6.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+    dependencies:
+      vue: registry.npmmirror.com/vue/3.2.38
 
   registry.npmmirror.com/vue-eslint-parser/9.1.0_eslint@8.24.0:
     resolution: {integrity: sha512-NGn/iQy8/Wb7RrRa4aRkokyCZfOUWk19OP5HP6JEozQFX5AoS/t+Z0ZN7FY4LlmWc4FNI922V7cvX28zctN8dQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/vue-eslint-parser/-/vue-eslint-parser-9.1.0.tgz}

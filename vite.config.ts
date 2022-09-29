@@ -8,7 +8,11 @@ export default defineConfig({
   plugins: [
     vue(),
     AutoImport({
-      imports: 'vue',
+      imports: [
+        'vue',
+        '@vueuse/core',
+        '@vueuse/head',
+      ],
       dts: './src/auto-imports.d.ts'
     }),
     Unocss()

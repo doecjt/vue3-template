@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import Greet from '@/components/Greet.vue'
-const a = 1
+
+console.log('useHead', useHead)
 </script>
 
 <template>

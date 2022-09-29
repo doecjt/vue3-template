@@ -1,15 +1,11 @@
+<script setup lang="ts">
+import { isDark, toggleDark } from '@/composables/dark'
+</script>
+
 <template>
+  <div i-bi:github text="50px" />
   <h3>Hello vue3-template</h3>
-  <div class="bg-sky">click</div>
-  <div bg-orange>xixi</div>
-  <div
-    i-twemoji-grinning-face-with-smiling-eyes
-    text-80px
-    hover="i-twemoji-face-with-tears-of-joy bg-sky"
-    cursor-pointer
-  />
-  <p
-    text="30px #1578ff"
-    hover="bg-sky"
-  >attributify</p>
+  <div cursor-pointer text="30px" @click="toggleDark()">
+    <div i="carbon-sun dark:carbon-moon" />
+  </div>
 </template>
