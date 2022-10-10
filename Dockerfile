@@ -1,3 +1,4 @@
+# build stage
 FROM node:16-alpine as build-stage
 
 WORKDIR /app
@@ -10,6 +11,7 @@ RUN --mount=type=cache,id=pnpm-store,target=/root/.pnpm-store \
 COPY . .
 RUN pnpm build
 
+# production stage
 FROM nginx:stable-alpine as production-stage
 
 COPY --from=build-stage /app/dist /app
