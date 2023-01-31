@@ -15,7 +15,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@antfu/eslint-config": "^0.27.0",
+    "@antfu/eslint-config": "^0.35.1",
     "@iconify/json": "^2.1.103",
     "@types/node": "^18.7.23",
     "@typescript-eslint/eslint-plugin": "^5.38.1",
@@ -31,6 +31,7 @@
     "unocss": "^0.45.15",
     "unplugin-auto-import": "^0.11.2",
     "vite": "^3.0.9",
+    "vitest": "^0.25.2",
     "vue-tsc": "^0.40.5"
   },
   "dependencies": {
