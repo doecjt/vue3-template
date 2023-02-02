@@ -8,5 +8,5 @@ export default defineConfig({
     presetWind(),
     presetAttributify(),
     presetIcons(),
-  ]
+  ],
 })

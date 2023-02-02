@@ -1,8 +1,9 @@
+import path from 'path'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import AutoImport from 'unplugin-auto-import/vite'
 import Unocss from 'unocss/vite'
-import path from 'path'
+import Components from 'unplugin-vue-components/vite'
 
 export default defineConfig({
   plugins: [
@@ -13,21 +14,26 @@ export default defineConfig({
         '@vueuse/core',
         '@vueuse/head',
       ],
-      dts: './src/auto-imports.d.ts'
+      dts: './src/auto-imports.d.ts',
     }),
-    Unocss()
+    Unocss(),
+    Components({
+      dirs: ['src/components'],
+      dts: true,
+      include: [/\.vue$/],
+    }),
   ],
   build: {
     minify: 'terser',
     terserOptions: {
       compress: {
-        drop_console: true
-      }
-    }
+        drop_console: true,
+      },
+    },
   },
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, 'src')
-    }
-  }
+      '@': path.resolve(__dirname, 'src'),
+    },
+  },
 })
